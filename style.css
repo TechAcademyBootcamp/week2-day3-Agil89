@@ -32,6 +32,13 @@ body{
 .hamburger{
     display: none;
 }
+.hamburger .line{
+    width: 35px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: gray;
+    
+}
 .fJToMw {
 
     font-family: "Lato", sans-serif;
@@ -44,6 +51,9 @@ body{
     border-radius: 6px;
     margin-left: 5px;
     white-space: nowrap;
+}
+.extra-menu{
+    display: none;
 }
 
 @media screen and (max-width:700px){
@@ -71,9 +81,25 @@ body{
     .img3 img{
         display: none;
     }
-    .hamburger{
+    .extra-menu{
+        width: 50%;
+        left: -100%;
+        margin-top: 500px;
+        display: flex;
+        transition: 1s;
+        position: fixed;
+        background-color: blanchedalmond;
+        z-index:1100;
+        flex-direction: column;
+        align-items: center;
         display: block;
+    }
+    .extra-menu.show{
+        left:0;
+    }
+    .hamburger{
         z-index: 1100;
+        display: block;
     }
     
 }
@@ -82,15 +108,19 @@ body{
             font-size:20px;
         }
 }
+
+.extra-menu-li{
+    list-style: none;
+    padding: 20px 0px;
+}
+
+.extra-menu-li a:hover{
+    text-decoration: none;
+}
 .offer-button b:hover{
     color: #009e7f;
 }
 .need-help-button:hover b,.need-help-button:hover svg{
     color: #009e7f;
 }
-.hamburger.line{
-    width: 35px;
-    height: 3px;
-    margin-bottom: 5px;
-    background-color: blanchedalmond;
-}
+
