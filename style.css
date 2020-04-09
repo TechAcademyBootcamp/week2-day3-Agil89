@@ -31,9 +31,10 @@ body{
 }
 .hamburger{
     display: none;
+    
 }
 .hamburger .line{
-    width: 35px;
+    width: 30px;
     height: 3px;
     margin-bottom: 5px;
     background-color: gray;
@@ -60,6 +61,14 @@ body{
     .nav-item.dropdown{
         display:none;
     }
+    .sec-1{
+        height: 300px;
+    }
+
+    .back{
+        min-height: 300px;
+    }
+    
     .offer-button b{
         display: none;
     }
@@ -82,13 +91,14 @@ body{
         display: none;
     }
     .extra-menu{
-        width: 50%;
+        width: 60%;
         left: -100%;
-        margin-top: 500px;
+        top: 0;
+        bottom: 0;
         display: flex;
         transition: 1s;
         position: fixed;
-        background-color: blanchedalmond;
+        background-color: white;
         z-index:1100;
         flex-direction: column;
         align-items: center;
@@ -98,7 +108,7 @@ body{
         left:0;
     }
     .hamburger{
-        z-index: 1100;
+        z-index: 2000;
         display: block;
     }
     
@@ -107,11 +117,24 @@ body{
         .h1-tag b{
             font-size:20px;
         }
+        .sec-1{
+            height: 160px;
+        }
+    
+        .back{
+            min-height: 160px;
+        }
 }
 
 .extra-menu-li{
+    padding: 20px;
+    font-size: 15px;
     list-style: none;
     padding: 20px 0px;
+    margin-left: 30px;
+}
+.extra-menu-li a{
+    color: black;
 }
 
 .extra-menu-li a:hover{
@@ -124,3 +147,15 @@ body{
     color: #009e7f;
 }
 
+.search-input{
+    padding: 19px 0px!important;
+}
+.price-button span{
+    border-radius: 12px;
+    background-color: white;
+    color: #009e7f;
+}
+.price-button span:hover{
+    background-color: #009e7f;
+    color: white;
+}
