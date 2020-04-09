@@ -32,6 +32,19 @@ body{
 .hamburger{
     display: none;
 }
+.fJToMw {
+
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    color: rgb(0, 158, 127);
+    line-height: 38px;
+    font-weight: 700;
+    padding: 0px 15px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 6px;
+    margin-left: 5px;
+    white-space: nowrap;
+}
 
 @media screen and (max-width:700px){
     .nav-item.dropdown{
